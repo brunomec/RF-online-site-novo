@@ -72,7 +72,7 @@ h3 { margin-bottom: 2.5rem; }
 button:focus { outline: none; }
 
 .tm-intro {
-	background: url(http://hdwall.us/wallpaper_1680x1050/rfonline_fantasy_romance_desktop_1280x1024_hd-wallpaper-153781.jpg) no-repeat;
+	background-image: url("../imagens/rfwall.jpg");
 	background-attachment: fixed;
 	background-size: 100%;
 	color: white;
