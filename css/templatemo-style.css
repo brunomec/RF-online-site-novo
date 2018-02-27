@@ -75,7 +75,7 @@ button:focus { outline: none; }
 	background-image: url("../imagens/rfwall.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-position: center center;
+	background-position: center;
 	background-size: 100%;
 	color: white;
 	display: -webkit-flex;
