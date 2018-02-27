@@ -72,10 +72,9 @@ h3 { margin-bottom: 2.5rem; }
 button:focus { outline: none; }
 
 .tm-intro {
-	background: url(../img/home-bg.jpg) no-repeat;
+	background: url(http://hdwall.us/wallpaper_1680x1050/rfonline_fantasy_romance_desktop_1280x1024_hd-wallpaper-153781.jpg) no-repeat;
 	background-attachment: fixed;
-	background-position: left top;
-	background-size: 100% 750px;
+	background-size: 100%;
 	color: white;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -89,12 +88,10 @@ button:focus { outline: none; }
 	-webkit-justify-content: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
-	height: 750px;	
+	height: 769px;	
 }
 
-@media (max-width: 1800px) {
-	.tm-intro {	background-size: 1800px 750px; }
-}
+
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 	/* IE10+ CSS styles go here */
