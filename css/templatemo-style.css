@@ -73,7 +73,9 @@ button:focus { outline: none; }
 
 .tm-intro {
 	background-image: url("../imagens/rfwall.jpg");
+	background-repeat: no-repeat;
 	background-attachment: fixed;
+	background-position: center center;
 	background-size: 100%;
 	color: white;
 	display: -webkit-flex;
@@ -88,7 +90,7 @@ button:focus { outline: none; }
 	-webkit-justify-content: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
-	height: 769px;	
+	height: 800px;	
 }
 
 
