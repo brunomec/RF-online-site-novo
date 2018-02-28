@@ -3,8 +3,7 @@ body {
 	font-size: 19px;
 	font-weight: 100;
 	background-image: url("../imagens/rfwall.jpg");
-	background-attachment: fixed;
-	background-position: left top;
+
 }
 
 a, button { transition: all 0.3s ease; }
