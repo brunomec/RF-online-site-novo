@@ -66,24 +66,50 @@
        
             $(document).ready(function(){
 
-                var mobileTopOffset = 54;
-                var desktopTopOffset = 80;
+                var mobileTopOffset = 74;
+                var desktopTopOffset = 100;
                 var topOffset = desktopTopOffset;
 
-                if($(window).width() <= 767) {
+                if($(window).width() <= 967) {
                     topOffset = mobileTopOffset;
                 }
 				
-            $(window).resize(function(){
-                    if($(window).width() <= 767) {
+				$(window).resize(function(){
+                    if($(window).width() <= 967) {
                         topOffset = mobileTopOffset;
                     } 
                     else {
                         topOffset = desktopTopOffset;
                     }
-			$('#tmNavbar a').click(function(){
+				$('#tmNavbar a').click(function(){
                     $('#tmNavbar').collapse('hide');
                 });
-                
+				
+				$(window).scroll(function(){
+                   
+                    if($(this).scrollTop() >= target) {
+                        $(".tm-navbar-container").addClass("bg-inverse");
+                    }
+                    else {
+                        $(".tm-navbar-container").removeClass("bg-inverse");
+                    }
+                });
+				
+                $('a[href*="#"]:not([href="#"])').click(function() {
+                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+                        && location.hostname == this.hostname) {
+                        
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                        
+                        if (target.length) {
+                            
+                            $('html, body').animate({
+                                scrollTop: target.offset().top - topOffset
+                            }, 1000);
+                            return false;
+                        }
+                    }
+                }); 
 </body>
 </html>
