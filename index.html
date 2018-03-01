@@ -66,16 +66,16 @@
        
             $(document).ready(function(){
 
-                var mobileTopOffset = 74;
-                var desktopTopOffset = 100;
+                var mobileTopOffset = 54;
+                var desktopTopOffset = 80;
                 var topOffset = desktopTopOffset;
 
-                if($(window).width() <= 967) {
+                if($(window).width() <= 767) {
                     topOffset = mobileTopOffset;
                 }
 				
 				$(window).resize(function(){
-                    if($(window).width() <= 967) {
+                    if($(window).width() <= 767) {
                         topOffset = mobileTopOffset;
                     } 
                     else {
