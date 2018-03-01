@@ -73,7 +73,15 @@
                 if($(window).width() <= 767) {
                     topOffset = mobileTopOffset;
                 }
-                
+				
+            $(window).resize(function(){
+                    if($(window).width() <= 767) {
+                        topOffset = mobileTopOffset;
+                    } 
+                    else {
+                        topOffset = desktopTopOffset;
+                    }
+
                 
 </body>
 </html>
