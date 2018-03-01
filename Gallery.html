@@ -136,75 +136,65 @@
 </tr>
 </table>
 
-<script>     
-         
+		<script src="js/jquery-1.11.3.min.js"></script>            
+        <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>  
+        <script src="js/bootstrap.min.js"></script>                
+        <script src="js/jquery.singlePageNav.min.js"></script>      
+        <script src="js/jquery.magnific-popup.min.js"></script>     
+        
+        <!-- Templatemo scripts -->
+        <script>     
+       
             $(document).ready(function(){
 
                 var mobileTopOffset = 54;
-                var tabletTopOffset = 74;
-                var desktopTopOffset = 79;
+                var desktopTopOffset = 80;
                 var topOffset = desktopTopOffset;
 
                 if($(window).width() <= 767) {
                     topOffset = mobileTopOffset;
                 }
-                else if($(window).width() <= 991) {
-                    topOffset = tabletTopOffset;
-                }
-              
-                /* Single page nav
-                -----------------------------------------*/
-                $('#tmNavbar').singlePageNav({
-                    'currentClass' : "active",
-                    offset : topOffset,
-                    'filter': ':not(.external)'
-                }); 
-
-                if($(window).width() < 570) {
-                    $('.tm-full-width-large-table').addClass('table-responsive');
-                }
-                else {
-                    $('.tm-full-width-large-table').removeClass('table-responsive');   
-                }
-              
-
-                /* Collapse menu after click 
-                -----------------------------------------*/
-                $('#tmNavbar a').click(function(){
-                    $('#tmNavbar').collapse('hide');
-                });
-
-              
-                /* Handle nav offset & table responsive upon window resize
-                --------------------------------------------------------------*/
-                $(window).resize(function(){
-                    
-                    if($(window).width() < 768) {
+				
+				$(window).resize(function(){
+                    if($(window).width() <= 767) {
                         topOffset = mobileTopOffset;
                     } 
-                    else if($(window).width() <= 991) {
-                        topOffset = tabletTopOffset;
-                    }
                     else {
                         topOffset = desktopTopOffset;
                     }
-
-                    $('#tmNavbar').singlePageNav({
-                        'currentClass' : "active",
-                        offset : topOffset,
-                        'filter': ':not(.external)'
-                    });
-
-                    if($(window).width() < 570) {
-                        $('.tm-full-width-large-table').addClass('table-responsive');
+					
+				$('#tmNavbar').singlePageNav({
+                   'currentClass' : "active",
+                    offset : topOffset,
+                    'filter': ':not(.external)'
+                }); 
+				
+				$(window).scroll(function(){
+                   
+                    if($(this).scrollTop() >= target) {
+                        $(".tm-navbar-container").addClass("bg-inverse");
                     }
                     else {
-                        $('.tm-full-width-large-table').removeClass('table-responsive');   
+                        $(".tm-navbar-container").removeClass("bg-inverse");
                     }
                 });
-                          
-            });
-
-        </script>    
-    </body>
+				
+                $('a[href*="#"]:not([href="#"])').click(function() {
+                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+                        && location.hostname == this.hostname) {
+                        
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                        
+                        if (target.length) {
+                            
+                            $('html, body').animate({
+                                scrollTop: target.offset().top - topOffset
+                            }, 1000);
+                            return false;
+                        }
+                    }
+                }); 
+			});
+</body>
 </html>
