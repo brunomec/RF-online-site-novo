@@ -68,8 +68,8 @@ h3 { margin-bottom: 2.5rem; }
     width: 300px;
     margin:  87px;
     padding: 10px;
-    position: fixed; /* For the submit button positioning */
-
+    position: relative; /* For the submit button positioning */
+    margin-left: 1025px;
 
     /* Styles */
     box-shadow: 
