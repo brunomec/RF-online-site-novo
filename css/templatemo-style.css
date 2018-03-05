@@ -66,10 +66,10 @@ h3 { margin-bottom: 2.5rem; }
 .form-1 {
     /* Size & position */
     width: 300px;
-    margin:  85px auto;
+    margin:  85px;
     padding: 10px;
     position: fixed; /* For the submit button positioning */
-    
+
 
     /* Styles */
     box-shadow: 
