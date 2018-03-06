@@ -65,7 +65,7 @@ h3 { margin-bottom: 2.5rem; }
 }
 
 .form-1{
-	top: 85px;
+	top: 60px;
     margin: 25px;
     margin-left: auto;
     position: relative;
@@ -82,7 +82,7 @@ h3 { margin-bottom: 2.5rem; }
     background: -o-linear-gradient(#eeefef, #ffffff 10%);
     background: -webkit-gradient(linear, 0 0, 0 100%, from(#eeefef), color-stop(0.1, #ffffff));
     background: -webkit-linear-gradient(#eeefef, #ffffff 10%);
-    background: linear-gradient(#eeefef, #ffffff 10%);
+    background: linear-gradient(#984d4d, #984d4d 10%);
 }
 .form-1 .field {
     position: relative; /* For the icon positioning */
@@ -128,7 +128,7 @@ h3 { margin-bottom: 2.5rem; }
         inset 0 0 5px rgba(0,0,0,0.1),
         inset 0 3px 2px rgba(0,0,0,0.1);
     border-radius: 3px;
-    background: #f9f9f9;
+    background: #f3e7e7;
     color: #777;
     -webkit-transition: color 0.3s ease-out;
     -moz-transition: color 0.3s ease-out;
@@ -168,7 +168,7 @@ h3 { margin-bottom: 2.5rem; }
     z-index: 2;
 
     /* Styles */
-    background: #ffffff;
+    background: #984d4d;
     border-radius: 50%;
     box-shadow: 
         0 0 2px rgba(0,0,0,0.1),
@@ -212,7 +212,7 @@ h3 { margin-bottom: 2.5rem; }
     background: -o-linear-gradient(#52cfeb, #42A2BC);
     background: -webkit-gradient(linear, 0 0, 0 100%, from(#52cfeb), to(#42A2BC));
     background: -webkit-linear-gradient(#52cfeb, #42A2BC);
-    background: linear-gradient(#52cfeb, #42A2BC);
+    background: linear-gradient(#000000, #bc4242);
     box-shadow: 
         inset 0 1px 0 rgba(255,255,255,0.3),
         0 1px 2px rgba(0,0,0,0.35),
