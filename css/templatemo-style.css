@@ -3,8 +3,9 @@ body {
 	font-size: 19px;
 	font-weight: 100;
 	background-image: url("../imagens/rfwall.jpg");
-	background-repeat: right bottom;
+	background-repeat: no-repeat;
 	background-attachment: fixed;
+	background-size: cover;
 
 }
 
